@@ -1,0 +1,13 @@
+language: php
+php:
+   - 7.1
+before_script:
+  - composer install --prefer-source
+  - composer require "codeception/codeception" --dev
+  - git clone https://github.com/itoktoni/testing.git
+  - ls
+  - cd testing
+script:
+  - vendor/bin/codecept run
+notifications:
+  email: false

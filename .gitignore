@@ -1,0 +1,4 @@
+/vendor
+/config/config.php
+/web/*.pdf
+/web/files/*.pdf
