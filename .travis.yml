@@ -4,9 +4,7 @@ php:
 before_script:
   - composer install --prefer-source
   - composer require "codeception/codeception"
-  - git clone https://github.com/itoktoni/testing.git
   - ls
-  - cd testing
 script:
   - vendor/bin/codecept run
 notifications:
