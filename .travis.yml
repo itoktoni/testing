@@ -3,7 +3,7 @@ php:
    - 7.1
 before_script:
   - composer install --prefer-source
-  - composer require "codeception/codeception" --dev
+  - composer require "codeception/codeception"
   - git clone https://github.com/itoktoni/testing.git
   - ls
   - cd testing
