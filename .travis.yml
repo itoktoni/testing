@@ -4,7 +4,7 @@ php:
 before_script:
   - composer install --prefer-source
   - ls
-  - php yii serve
+  - php -S localhost:8080 -t web > /dev/null 2>&1 &
 script:
   - vendor/bin/codecept run
 notifications:
